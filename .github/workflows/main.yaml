@@ -1,9 +1,9 @@
 name: Github 2 Dockerhub 2 Slack
 on:
-  push:
+  release:
   # types: [published]
   #   tag:
-  #   - v1.*
+  #   - v1.1
 
 jobs:
   build_and_upload:
@@ -50,5 +50,5 @@ jobs:
               ]
             }
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URLCASUBMIT }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK 
