@@ -44,7 +44,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: Kolanjhikannan/n Maticulation Number:A0249484N/n Email: e0942677@u.nus.edu \n Repo:https://github.com/Akshayahasinee/randnum.git/n Image name:akshayahasinee/randnum:v1.1\n  Image Url:https://hub.docker.com/repository/docker/akshayahasinee/randnum\n GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+                    "text": "Name: Kolanjhikannan \n Maticulation Number:A0249484N \n Email: e0942677@u.nus.edu \n Repo:https://github.com/Akshayahasinee/randnum.git \n  Image name:akshayahasinee/randnum:v1.1 \n  Image Url:https://hub.docker.com/repository/docker/akshayahasinee/randnum \n GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
                   }
                 }
               ]
