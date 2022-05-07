@@ -26,8 +26,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: user/app:latest
-
+          tags: akshayahasinee/randnum:v1.1
       # # https://github.com/marketplace/actions/slack-webhook
       # - name: Post message on slack
       #   uses: bluenovaio/action-slack@main 
