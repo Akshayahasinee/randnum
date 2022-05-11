@@ -1,9 +1,8 @@
 name: Github 2 Dockerhub 2 Slack
 on:
-  release:
-  # types: [published]
-  #   tag:
-  #   - v1.*
+ release:
+  types: [published]
+  
 
 jobs:
   build_and_upload:
@@ -44,7 +43,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: Kolanjhikannan Akshayahasinee \n Maticulation Number:A0249484N \n Email: e0942677@u.nus.edu \n Repo:https://github.com/Akshayahasinee/randnum.git \n  Image name:akshayahasinee/randnum:v1.1 \n  Image Url:https://hub.docker.com/repository/docker/akshayahasinee/randnum \n"
+                    "text": "Name: Kolanjhikannan Akshayahasinee \n Maticulation Number:A0249484N \n Email: e0942677@u.nus.edu \n Repo: ${{ github.repositoryUrl }} \n  Image name:akshayahasinee/randnum:${{ github.ref_name }} \n  Image Url:https://hub.docker.com/repository/docker/akshayahasinee/randnum \n"
                   }
                 }
               ]
